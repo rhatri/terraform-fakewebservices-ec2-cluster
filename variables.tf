@@ -4,6 +4,12 @@ variable "token" {
   sensitive = true
 }
 
+variable "hostname" {
+  type = string
+  default = "app.terraform.io"
+  description = "The hostname to use"
+}
+
 variable "instance_type" {
   type = string
   description = "The EC2 instance type"
